@@ -2,44 +2,44 @@
 	font-family: Lato;
 	font-weight: bold;
 	src: local(Lato),
-	     url(../fonts/Lato-Bold.woff2) format(woff2),
-	     url(../fonts/Lato-Bold.woff) format(woff);
+	     url(../fonts/Lato-Bold.woff2) format('woff2'),
+	     url(../fonts/Lato-Bold.woff) format('woff');
 }
 
 @font-face {
 	font-family: Lato;
 	font-weight: normal;
 	src: local(Lato),
-	     url(../fonts/Lato-Regular.woff2) format(woff2),
-	     url(../fonts/Lato-Regular.woff) format(woff);
+	     url(../fonts/Lato-Regular.woff2) format('woff2'),
+	     url(../fonts/Lato-Regular.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'Neo Euler';
-	src: local(Neo Euler),
-	     url(../fonts/euler.woff2) format(woff2),
-	     url(../fonts/euler.woff) format(woff);
+	src: local('Neo Euler'),
+	     url(../fonts/euler.woff2) format('woff2'),
+	     url(../fonts/euler.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'Noto Emoji';
-	src: local(Noto Emoji),
-	     url(../fonts/NotoEmoji-Regular.woff2) format(woff2),
-	     url(../fonts/NotoEmoji-Regular.woff) format(woff);
+	src: local('Noto Emoji'),
+	     url(../fonts/NotoEmoji-Regular.woff2) format('woff2'),
+	     url(../fonts/NotoEmoji-Regular.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'Noto Sans';
-	src: local(Noto Sans),
-	     url(../fonts/euler.woff2) format(woff2),
-	     url(../fonts/euler.woff) format(woff);
+	src: local('Noto Sans'),
+	     url(../fonts/euler.woff2) format('woff2'),
+	     url(../fonts/euler.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'Source Code Pro';
-	src: local(Source Code Pro),
-	     url(../fonts/NotoSans-Regular.woff2) format(woff2),
-	     url(../fonts/NotoSans-Regular.woff) format(woff);
+	src: local('Source Code Pro'),
+	     url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+	     url(../fonts/NotoSans-Regular.woff) format('woff');
 }
 
 html {
