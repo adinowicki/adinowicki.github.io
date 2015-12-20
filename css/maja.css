@@ -1,0 +1,77 @@
+@font-face {
+	font-family: Lato;
+	font-weight: bold;
+	src: local(Lato),
+	     url(../fonts/Lato-Bold.woff2) format(woff2),
+	     url(../fonts/Lato-Bold.woff) format(woff);
+}
+
+@font-face {
+	font-family: Lato;
+	font-weight: normal;
+	src: local(Lato),
+	     url(../fonts/Lato-Regular.woff2) format(woff2),
+	     url(../fonts/Lato-Regular.woff) format(woff);
+}
+
+@font-face {
+	font-family: 'Neo Euler';
+	src: local(Neo Euler),
+	     url(../fonts/euler.woff2) format(woff2),
+	     url(../fonts/euler.woff) format(woff);
+}
+
+@font-face {
+	font-family: 'Noto Emoji';
+	src: local(Noto Emoji),
+	     url(../fonts/NotoEmoji-Regular.woff2) format(woff2),
+	     url(../fonts/NotoEmoji-Regular.woff) format(woff);
+}
+
+@font-face {
+	font-family: 'Noto Sans';
+	src: local(Noto Sans),
+	     url(../fonts/euler.woff2) format(woff2),
+	     url(../fonts/euler.woff) format(woff);
+}
+
+@font-face {
+	font-family: 'Source Code Pro';
+	src: local(Source Code Pro),
+	     url(../fonts/NotoSans-Regular.woff2) format(woff2),
+	     url(../fonts/NotoSans-Regular.woff) format(woff);
+}
+
+html {
+	font: 100%/1.5 'Noto Sans', sans-serif;
+}
+
+body, a {
+	color: #111;
+}
+
+body {
+	background-color: #fffff8;
+}
+
+footer, main {
+	margin: 8px auto;
+	max-width: 33em;
+}
+
+main {
+	display: block;
+}
+
+h1, h2, h3 {
+	font-family: Lato, sans-serif;
+}
+
+del {
+	background-color: #fee;
+}
+
+ins {
+	background-color: #dfd;
+	text-decoration: none;
+}
