@@ -31,15 +31,15 @@
 @font-face {
 	font-family: 'Noto Sans';
 	src: local('Noto Sans'),
-	     url(../fonts/euler.woff2) format('woff2'),
-	     url(../fonts/euler.woff) format('woff');
+	     url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+	     url(../fonts/NotoSans-Regular.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'Source Code Pro';
 	src: local('Source Code Pro'),
-	     url(../fonts/NotoSans-Regular.woff2) format('woff2'),
-	     url(../fonts/NotoSans-Regular.woff) format('woff');
+	     url(../fonts/SourceCodePro-Regular.woff2) format('woff2'),
+	     url(../fonts/SourceCodePro-Regular.woff) format('woff');
 }
 
 html {
