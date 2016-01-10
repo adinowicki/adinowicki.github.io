@@ -4,16 +4,23 @@
 	<meta name=viewport content="initial-scale=1, width=device-width">
 	<link rel=stylesheet href=css/maja.css>
 	<title>{% if page.title %}{{ page.title }} – {% endif %}Homepage of Adrian Nowicki</title>
+	<nav>
+		<header>
+			<h1>{% if page.title %}{{ page.title }}{% else %}Homepage of Adrian Nowicki{% endif %}</h1>
+		</header>
+		<ul>
+		{% for page in site.pages %}			<li><a href={{ page.path }}>{{ page.title }}</a>
+		{% endfor %}</ul>
+	</nav>
 	<main>
-{{ content }}
-	</main>
+{{ content }}	</main>
 	<footer>
 		<p>
-			<a rel=license
+			<a class=link-img rel=license
 			   href=//creativecommons.org/publicdomain/zero/1.0/>
 				<img src=images/cc0.png alt=CC0>
 			</a>
-	  		<br>
+	  	<p>
 			To the extent possible under law,
 			<a rel=dc:publisher
 			   href=https://adinowicki.github.io>
