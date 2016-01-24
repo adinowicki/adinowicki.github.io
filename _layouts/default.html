@@ -10,7 +10,7 @@
 			<h1>{% if page.title %}{{ page.title }}{% else %}Homepage of Adrian Nowicki{% endif %}</h1>
 		</header>
 		<ul>
-		{% for page in site.pages %}	<li><a href={{ page.url }}>{{ page.title }}</a>
+		{% for site_page in site.pages %}	<li>{% if site_page.url != page.url %}<a href={{ site_page.url }}>{{ site_page.title }}</a>{% else %}{{ site_page.title }}{% endif %}
 		{% endfor %}</ul>
 	</nav>
 	<main>
@@ -23,9 +23,7 @@
 			</a>
 	  	<p>
 			To the extent possible under law,
-			<a rel=dc:publisher
-			   href=https://adinowicki.github.io>
-				<span property=dc:title>Adrian Nowicki</span></a>
+			{% if page.url != '/' %}<a rel=dc:publisher href=https://adinowicki.github.io>{% endif %}<span property=dc:title>Adrian Nowicki</span>{% if page.url != '/' %}</a>{% endif %}
 			has waived all copyright and related or neighboring rights to
 			<span property=dc:title>Homepage of Adrian Nowicki</span>.
 			This work is published from:

@@ -84,10 +84,6 @@ nav header, nav li {
 	margin-left: 1em;
 }
 
-nav a, nav a:focus, nav a:hover {
-	text-decoration: none;
-}
-
 nav header {
 	width: 9%;
 }
