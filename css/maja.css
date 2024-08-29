@@ -1,100 +1,143 @@
 @font-face {
+	font-display: swap;
 	font-family: Lato;
 	font-weight: bold;
-	src: local(Lato),
-	     url(/fonts/Lato-Bold.woff2) format('woff2'),
-	     url(/fonts/Lato-Bold.woff) format('woff');
+	src: url(/fonts/Lato-Bold-0000.woff2) format('woff2');
+	unicode-range: U+0-FF;
 }
 
 @font-face {
+	font-display: swap;
+	font-family: Lato;
+	font-weight: bold;
+	src: url(/fonts/Lato-Bold-0100.woff2) format('woff2');
+	unicode-range: U+100-17F, U+FFFD;
+}
+
+
+@font-face {
+	font-display: swap;
 	font-family: Lato;
 	font-weight: normal;
-	src: local(Lato),
-	     url(/fonts/Lato-Regular.woff2) format('woff2'),
-	     url(/fonts/Lato-Regular.woff) format('woff');
+	src: url(/fonts/Lato-Regular-0000.woff2) format('woff2');
+	unicode-range: U+0-FF;
 }
 
 @font-face {
-	font-family: 'Neo Euler';
-	src: local('Neo Euler'),
-	     url(/fonts/euler.woff2) format('woff2'),
-	     url(/fonts/euler.woff) format('woff');
+	font-display: swap;
+	font-family: Lato;
+	font-weight: normal;
+	src: url(/fonts/Lato-Regular-0100.woff2) format('woff2');
+	unicode-range: U+100-17F, U+FFFD;
 }
 
 @font-face {
-	font-family: 'Noto Emoji';
-	src: local('Noto Emoji'),
-	     url(/fonts/NotoEmoji-Regular.woff2) format('woff2'),
-	     url(/fonts/NotoEmoji-Regular.woff) format('woff');
+	font-display: fallback;
+	font-family: 'Open Sans';
+	src: url(/fonts/OpenSans-Regular-0000.woff2) format('woff2');
+	unicode-range: U+0-FF;
 }
 
 @font-face {
-	font-family: 'Noto Sans';
-	src: local('Noto Sans'),
-	     url(/fonts/NotoSans-Regular.woff2) format('woff2'),
-	     url(/fonts/NotoSans-Regular.woff) format('woff');
+	font-display: fallback;
+	font-family: 'Open Sans';
+	font-style: italic;
+	src: url(/fonts/OpenSans-Italic-0000.woff2) format('woff2');
+	unicode-range: U+0-FF;
 }
 
 @font-face {
-	font-family: 'Source Code Pro';
-	src: local('Source Code Pro'),
-	     url(/fonts/SourceCodePro-Regular.woff2) format('woff2'),
-	     url(/fonts/SourceCodePro-Regular.woff) format('woff');
+	font-display: fallback;
+	font-family: 'Open Sans';
+	src: url(/fonts/OpenSans-Regular-0100.woff2) format('woff2');
+	unicode-range: U+100-17F, U+FFFD;
+}
+
+@font-face {
+	font-display: fallback;
+	font-family: 'Open Sans';
+	src: url(/fonts/OpenSans-Regular-0370.woff2) format('woff2');
+	unicode-range: U+370-3FF;
+}
+
+@font-face {
+	font-display: fallback;
+	font-family: 'Noto Sans JP';
+	src: url(/fonts/NotoSansJP-Regular-3040.woff2) format('woff2');
+	unicode-range: U+3040-309F;
+}
+
+@font-face {
+	font-display: fallback;
+	font-family: 'Noto Sans JP';
+	src: url(/fonts/NotoSansJP-Regular-4e00.woff2) format('woff2');
+	unicode-range: U+4E00-4E1F;
+}
+
+@font-face {
+	font-display: fallback;
+	font-family: 'Noto Sans JP';
+	src: url(/fonts/NotoSansJP-Regular-7400.woff2) format('woff2');
+	unicode-range: U+7400-741F;
 }
 
 html {
-	font: 100%/1.5 'Noto Sans', sans-serif;
+	font: 100%/1.5 'Open Sans', 'Noto Sans JP', sans-serif;
 }
 
 body, a {
-	color: #111;
+	color: #212121;
 }
 
 body {
-	background-color: #fffff8;
+	background:  url(/images/antelope.webp) no-repeat center 0 #fffde7;
+	margin: 100px 0 0 0;
 }
 
-footer, main {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 33em;
+body > nav, body > nav ul {
+	display: flex;
 }
 
-footer {
-	margin-top: 3em;
-}
-
-footer p:first-child {
-	text-align: center;
-}
-
-nav, nav a {
+body > nav, body > nav a {
 	color: #fff;
 }
 
-nav {
-	background-color: #832;
+body > nav {
+	background-color: #b71c1c;
+	justify-content: space-between;
 }
 
-nav header, nav ul, nav li {
-	display: inline-block;
-}
-
-nav header, nav li {
+body > nav header, body > nav li {
+	align-self: center;
 	margin-left: 1em;
 }
 
-nav header {
-	width: 9%;
-}
-
-nav ul {
-	margin-left: 75%;
+body > nav ul {
+	margin-right: 1em;
 	padding-left: 0;
 }
 
-main {
+body > nav li {
+	list-style: none;
+}
+
+footer, main, p > img, p > a > img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer, main {
+	max-width: 33em;
+	padding: .5em;
+}
+
+main, p > img, p > a > img {
 	display: block;
+}
+
+aside {
+	font-style: italic;
+	padding-left: .5em;
 }
 
 h1, h2, h3, nav {
@@ -114,12 +157,28 @@ ins {
 }
 
 @media (max-width: 767px) {
-	nav ul, nav li {
+	nav, nav ul {
 		display: block;
+	}
+
+	nav header, aside {
+		display: inline-flex;
 	}
 	
 	nav ul {
 		margin: 0;
 		padding-bottom: 1em;
+	}
+
+	li {
+		padding: .5em 0;
+	}
+
+	dd aside {
+		margin-top: .5em;
+	}
+	
+	dd img {
+		margin-left: -40px;
 	}
 }

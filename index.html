@@ -1,23 +1,148 @@
----
-layout: default
-title: About
-permalink: /
----
-		<article itemscope itemtype=https://schema.org/Person>
-			<h2>About <span itemprop=name>Adrian Nowicki</span></h2>
-			<p>Hello, I'm Adrian <span itemprop=additionalName>Marcin</span> Nowicki
-			or amn.
-			<p>I'm a (mostly)
-			<span itemprop=jobTitle><a href=//www.python.org>Python</a>/<a href=//www.djangoproject.com>Django</a>
-			programmer</span> at <a href=//www.specprawnik.pl hreflang=pl>Specprawnik.pl</a>.
-			<h3>Me elsewhere</h3>
+<!DOCTYPE html>
+<html lang=en-x-amn>
+	<meta charset=utf-8>
+	<meta name=viewport content="initial-scale=1, width=device-width">
+	<meta name=theme-color content=#b71c1c>
+	<meta name=description content="Adrian Nowicki's homepage">
+	<meta property=og:image content=https://anowicki.pl/images/amn2x.webp>
+	<meta property=og:loc content=https://gta.fandom.com/wiki/OG_Loc>
+	<link rel=preload href=/fonts/OpenSans-Regular-0000.woff2 as=font crossorigin>
+	<link rel=preload href=/fonts/OpenSans-Italic-0000.woff2 as=font crossorigin>
+	<link rel=preload href=/fonts/OpenSans-Regular-0100.woff2 as=font crossorigin>
+	<link rel=preload href=/fonts/OpenSans-Regular-0370.woff2 as=font crossorigin>
+	<link rel=preload href=/fonts/NotoSansJP-Regular-3040.woff2 as=font crossorigin>
+	<link rel=preload href=/fonts/NotoSansJP-Regular-4e00.woff2 as=font crossorigin>
+	<link rel=preload href=/fonts/NotoSansJP-Regular-7400.woff2 as=font crossorigin>
+	<link rel=preload href=/fonts/Lato-Bold-0000.woff2 as=font crossorigin>
+	<link rel=preload href=/fonts/Lato-Regular-0000.woff2 as=font crossorigin>
+	<link rel=preload href=/css/maja.css as=style>
+	<link rel=stylesheet href=/css/maja.css>
+	<link rel=canonical href=https://anowicki.pl/>
+	<title>Adrian Nowicki's homepage</title>
+	<nav>
+		<header>
+			<h1>Adrian Nowicki's homepage</h1>
+		</header>
+	</nav>
+	<main>
+		<nav>
+			<h1>Contents</h1>
 			<ul>
-				<li><a href="mailto:?to=Adrian%20Nowicki%20%3cadinowicki@gmail.com%3e" itemprop=email>Email</a>
-				<li><a href=//www.facebook.com/adrian.m.nowicki itemprop=sameAs>Facebok</a>
-				<li><a href=//github.com/adinowicki itemprop=sameAs>GitHub</a>
-				<li><a href=//plus.google.com/+AdrianNowickiAMN itemprop=sameAs>Google+</a>
-				<li><a href=//www.instagram.com/adinowicki itemprop=sameAs>Instagram</a>
-				<li><a href=//www.linkedin.com/in/adrianmnowicki itemprop=sameAs>LinkedIn</a>
-				<li><a href=//twitter.com/AdrianNowicki itemprop=sameAs>Twitter</a>
+				<li><a href=#about>About Adrian Nowicki</a>
+				<li><a href=#contact>Contact</a>
+				<li><a href=#q-and-a>Q&A</a>
 			</ul>
+		</nav>
+		<article itemscope itemtype=http://schema.org/Person>
+			<h2 id=about>About <span itemprop=name>Adrian Nowicki</span></h2>
+			<p>Hello World, or <span lang=el>Καλημέρα κόσμε</span>, or <span lang=ja>こんにちは世界</span>.
+			<p><img src=/images/amn.webp srcset="/images/amn2x.webp 2x, /images/amn.webp 1x" alt="Photo of Adrian Nowicki" itemprop=image width=378 height=504>
+			<p>I'm Adrian <span itemprop=additionalName>Marcin</span> Nowicki
+			or amn.
+			<p>I was born in <a href=https://en.wikipedia.org/wiki/Jarocin><span itemprop=birthPlace>Jarocin</span></a> in 1985
+			(<time datetime=1985-06-08 itemprop=https://schema.org/birthDate>8th of June</time>,
+			to be exact, 18:30 to be even more), now living in <a href=https://en.wikipedia.org/wiki/Pozna%C5%84><span itemprop=https://schema.org/address>Poznań</span></a>.
+			<p>I'm a <span itemprop=jobTitle>programmer</span>. Depending on the size of a problem, my languages of choice are:
+			<a href=https://9fans.github.io/plan9port/man/man1/awk.html>AWK</a>, <a href=https://www.python.org/>Python</a>, or <a href=https://golang.org/>Go (golang)</a>.
+			The last one used to be <a href=https://en.wikipedia.org/wiki/ANSI_C>ANSI C</a> before Go existed.
+			<p>I currently work at <span itemprop=worksFor>Specfile Project Sp. z o.o.</span>
+			<p>At work I currently program in Python, using <a href=https://www.djangoproject.com/>Django</a> framework.
+			I also know <a href=http://flask.pocoo.org/>Flask</a> and I think that
+			<a href=https://webapp2.readthedocs.io/en/latest/>webapp2</a> is interesting, because:
+			<ol>
+				<li>it's small,
+				<li>it probably is the only one framework where you write to response instead of returning it.
+			</ol>
+			<p>The server (maja) hosting this very site is written in Go. Go figure.
+			<p>Projects on which I work or have been working on:
+			<ul>
+				<li><a href=https://www.specfile.pl/>Specfile</a>
+				<li><a href=https://oduslug.pl>OdUslug</a>
+				<li>RINGf, see: Włodzimierz Gogołek, Dariusz Jaruga, <a href=http://studiamedioznawcze.pl/Numery/2016_4_67/gogolek-en.pdf>From research on the system of refining
+				the Web. Identifying sentiment words</a>
+				(in Polish: <a href=http://studiamedioznawcze.pl/Numery/2016_4_67/gogolek.pdf hreflang=pl>
+				Z&nbsp;badań nad systemem rafinacji sieciowej. Identyfikacja sentymentów</a>), Studia Medioznawcze Media Studies 4 (67) 2016
+				<li><a href=https://www.specprawnik.pl/>Specprawnik</a>
+			</ul>
+			<p>I used to be a librarian.
+			<p>I'm interested in: mathematics (mainly combinatorics, but also some calculus and topology), physics, astronomy, syntax of formal and natural languages.
+			<p>Also I think that <a href=https://tvtropes.org/pmwiki/pmwiki.php/Main/KatanasAreJustBetter>katanas are just worse</a>.
+			<h2>Me elsewhere</h2>
+			<ul>
+				<li><a href=https://www.facebook.com/adrian.m.nowicki itemprop=sameAs>Facebok</a>
+				<li><a href=https://github.com/adinowicki itemprop=sameAs>GitHub</a>
+				<li><a href=https://www.linkedin.com/in/adrianmnowicki itemprop=sameAs>LinkedIn</a>
+				<li><a href=https://twitter.com/AdrianNowicki itemprop=sameAs>Twitter</a>
+			</ul>
+			<h2 id=contact>Contact</h2>
+			<p>My email is <a href="mailto:?to=Adrian%20Nowicki%20%3cadrian@anowicki.pl%3e" itemprop=email>adrian@anowicki.pl</a>. My PGP key can be found on
+			<a href=https://keybase.io/anowicki itemprop=sameAs>my Keybase account</a>.
+			<h2 id=q-and-a>Q&A</h2>
+			<dl>
+				<dt>Sir, your site looks like <i>þe shite</i>.
+				<dd>Because<br>
+				<a href=http://beza1e1.tuxen.de/spartan_web.html><img src=/images/sparta.webp alt="This is Sparta!" width=350 height=259></a>
+				<dt>You like those old, not funny anymore, memes, do you?
+				<dd><a href="https://www.youtube.com/watch?v=D8Ymd-OCucs">Yeah</a>.
+				<dt>What is your <abbr title="Myers–Briggs Type Indicator">MBTI</abbr> personality type?
+				<dd>I don't believe in MBTI; I'm an <abbr title="Introverted iNtuitive Thinking Perceiver">INTP</abbr> and we're <a href=http://skepdic.com/myersb.html>skeptical</a>.
+				<dt>What is your height?
+				<dd><span itemprop=https://schema.org/height>178 cm</span>.
+				<dt>What is your favourite number?
+				<dd>0, a.k.a. neutral element of addition and 1 a.k.a. neutral element of multiplication.
+				<dt>What is 0⁰?
+				<dd>1.
+				<dt>Favourite music?
+				<dd>I listen to almost everything, but at the moment I like <a href=https://en.wikipedia.org/wiki/Post-grunge>post-grunge</a> the most. Yes, that includes
+				Nickelback. My clock alarm is <a href=https://open.spotify.com/playlist/37i9dQZF1DWVwr24yj95lH>this playlist</a>.
+				Neighbors probably hate me.
+				<dt>Favourite author?
+				<dd>Brian Kernighan. Oh, you mean of a story book? Andrzej Sapkowski. Now I'm starting to read books by Terry Pratchett.<br>
+				Two most important books in my life are: <i lang=pl>Prawda i mity w fizyce</i> (<i>Truth and myths in physics</i>) by Andrzej Kajetan Wróblewski and <i>A Brief History
+				of Time</i> by Stephen Hawking. 
+				<dt>We are nerds. What is your setup?
+				<dt>
+					<dl>
+						<dt>Computer:
+						<dd>Thinkpad P50s and Raspberry Pi 3B+.
+						<dt>Operating system:
+						<dd><a href=http://www.ubuntu.com>Ubuntu</a> and <a href=https://www.microsoft.com/en-us/windows>Windows 10</a> on the laptop,
+						<a href=https://www.raspbian.org/>Raspbian</a> on the Raspberrry Pi. In the past: <a href=https://www.funtoo.org/Welcome>Funtoo</a>,
+						<a href=https://www.gentoo.org/>Gentoo</a>, <a href=https://www.openbsd.org/>OpenBSD</a>, <a href=https://www.debian.org/>Debian</a>, and
+						<a href=https://en.wikipedia.org/wiki/Mandriva_Linux>Mandrakelinux</a>.<br>
+						This site sits on Debian.
+						<dt>Game console:
+						<dd>Nintentdo Switch, Playstation 4, NES Classic Edition, Super NES Classic Edition.
+						<dt>Phone:
+						<dd>Pixel 2
+						<dt>Bike:
+						<dd>Kellys Phanatic 10.
+					</dl>
+				<dt>Is there a God?
+				<dd><a href=http://www.400monkeys.com/God/>No</a>.
+				<dt>Emacs or Vi?
+				<dd><a href=https://interviews.slashdot.org/story/04/10/18/1153211/rob-pike-responds>Neither</a>. I use the 
+				<a href=https://9fans.github.io/plan9port/man/man1/sam.html>sam text editor</a>. This very site is written with it's use.<br>
+				Also: <a href=https://www.gnu.org/fun/jokes/ed-msg.html>Ed is the standard text editor</a>.
+				<dt>What is the greatest computer game of all time?
+				<dd><a href=https://www.zelda.com/breath-of-the-wild/>The Legend of Zelda: Breath of the Wild</a>. Previous greatest games were
+				<a href=http://www.rockstargames.com/sanandreas/>Grand Theft Auto: San Andreas</a> and <a href=http://www.rockstargames.com/vicecity/>Grand Theft Auto: Vice City</a>.
+				<dt>And what about TV show?
+				<dd>Easy: Twin Peaks. Later shows are just a rip-offs. Take X-Files for instance. Titular X-Files are just a ripp-off of the Blue Rose. FBI agent played by
+				David Duchovny? Checked.
+				<dt>What's with this strange time format of last updated?
+				<dd>See <a href=https://tools.ietf.org/html/rfc3339>RFC 3339</a>.
+			</dl>
+			<p>Anyway, if you have been, thanks for reading.
 		</article>
+	</main>
+	<footer itemscope itemtype=http://schema.org/WebPage>
+		<p>Last updated: <time itemprop=dateModified>2021-03-26T15:03:45+01:00</time>.
+		<p><a rel=license href=https://creativecommons.org/publicdomain/zero/1.0/><img src=/images/cc-zero.svg alt=CC0 width=88 height=31></a>
+	  	<p>To the extent possible under law, <span property=dc:title>Adrian Nowicki</span> has waived all copyright and related or neighboring rights to
+	  	<span property=dc:title>Adrian Nowicki's homepage</span>.
+		This work is published from: <span property=vcard:Country datatype="dc:content=PL" about=https://anowicki.pl> Poland</span>.
+		<p>Image in header: <a href=https://www.flickr.com/photos/markbyzewski/4170349319/>Antelope Canyon</a> by <a href=https://www.flickr.com/photos/markbyzewski/>Mark Byzewski</a>.
+		<p>Meme: image from movie <a href=https://www.warnerbros.com/movies/300/>300</a> by <a href=https://www.warnerbros.com/>Warner Bros. Pictures</a>, text added by
+		<a href=https://imgflip.com/>imgflip</a> and then image was resized.
+	</footer>
