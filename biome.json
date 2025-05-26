@@ -1,0 +1,17 @@
+{
+	"css": {
+		"formatter": {
+			"enabled": true,
+			"quoteStyle": "single"
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"indentStyle": "space",
+			"bracketSpacing": false,
+			"quoteStyle": "single",
+			"trailingCommas": "all",
+			"arrowParentheses": "asNeeded"
+		}
+	}
+}

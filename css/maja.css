@@ -14,7 +14,6 @@
 	unicode-range: U+100-17F, U+FFFD;
 }
 
-
 @font-face {
 	font-display: swap;
 	font-family: Lato;
@@ -82,23 +81,26 @@
 }
 
 html {
-	font: 100%/1.5 'Open Sans', 'Noto Sans JP', sans-serif;
+	font: 100% / 1.5 'Open Sans', 'Noto Sans JP', sans-serif;
 }
 
-body, a {
+body,
+a {
 	color: #212121;
 }
 
 body {
-	background:  url(/images/antelope.webp) no-repeat center 0 #fffde7;
+	background: url(/images/antelope.webp) no-repeat center 0 #fffde7;
 	margin: 100px 0 0 0;
 }
 
-body > nav, body > nav ul {
+body > nav,
+body > nav ul {
 	display: flex;
 }
 
-body > nav, body > nav a {
+body > nav,
+body > nav a {
 	color: #fff;
 }
 
@@ -107,7 +109,8 @@ body > nav {
 	justify-content: space-between;
 }
 
-body > nav header, body > nav li {
+body > nav header,
+body > nav li {
 	align-self: center;
 	margin-left: 1em;
 }
@@ -121,17 +124,23 @@ body > nav li {
 	list-style: none;
 }
 
-footer, main, p > img, p > a > img {
+footer,
+main,
+p > img,
+p > a > img {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-footer, main {
+footer,
+main {
 	max-width: 33em;
 	padding: .5em;
 }
 
-main, p > img, p > a > img {
+main,
+p > img,
+p > a > img {
 	display: block;
 }
 
@@ -140,7 +149,10 @@ aside {
 	padding-left: .5em;
 }
 
-h1, h2, h3, nav {
+h1,
+h2,
+h3,
+nav {
 	font-family: Lato, sans-serif;
 }
 
@@ -153,7 +165,8 @@ del {
 	background-color: #faa;
 }
 
-ins, .link-img {
+ins,
+.link-img {
 	text-decoration: none;
 }
 
@@ -162,14 +175,16 @@ ins {
 }
 
 @media (max-width: 767px) {
-	nav, nav ul {
+	nav,
+	nav ul {
 		display: block;
 	}
 
-	nav header, aside {
+	nav header,
+	aside {
 		display: inline-flex;
 	}
-	
+
 	nav ul {
 		margin: 0;
 		padding-bottom: 1em;
@@ -182,7 +197,7 @@ ins {
 	dd aside {
 		margin-top: .5em;
 	}
-	
+
 	dd img {
 		margin-left: -40px;
 	}
