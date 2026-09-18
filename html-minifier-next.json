@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/j9t/html-minifier-next/main/html-minifier-next.schema.json",
+  "caseSensitive": true,
+  "collapseBooleanAttributes": true,
+  "collapseWhitespace": false,
+  "decodeEntities": true,
+  "keepClosingSlash": false,
+  "minifyCSS": false,
+  "minifyJS": false,
+  "minifySVG": false,
+  "minifyURLs": true,
+  "quoteCharacter": "\"",
+  "removeComments": false,
+  "removeAttributeQuotes": true,
+  "removeEmptyAttributes": true,
+  "removeDefaultTypeAttributes": true,
+  "removeOptionalTags": true,
+  "sortAttributes": true,
+  "useShortDoctype": true
+}
