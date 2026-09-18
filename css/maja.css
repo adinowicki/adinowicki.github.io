@@ -82,6 +82,7 @@
 
 html {
 	font: 100% / 1.5 'Open Sans', 'Noto Sans JP', sans-serif;
+	text-wrap: pretty;
 }
 
 body,
@@ -134,7 +135,7 @@ p > a > img {
 
 footer,
 main {
-	max-width: 33em;
+	max-width: 66ch;
 	padding: .5em;
 }
 
@@ -147,6 +148,10 @@ p > a > img {
 aside {
 	font-style: italic;
 	padding-left: .5em;
+}
+
+p {
+	margin-block: 1lh;
 }
 
 h1,
@@ -172,6 +177,10 @@ ins,
 
 ins {
 	background-color: #9f9;
+}
+
+@view-transition {
+	navigation: auto;
 }
 
 @media (max-width: 767px) {
